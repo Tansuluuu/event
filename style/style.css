@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    min-width: 1140px;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.mobile-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+header div{
+   align-items: center;
+
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    padding: 0 15px;
+}
+header button{
+    border: none;
+    background: none;
+}
+
+
+.yellow-position{
+    position: absolute;
+    top: 100px;
+    background: rgba(209, 169, 84, 0.90);
+    opacity: 0.5;
+
+}
