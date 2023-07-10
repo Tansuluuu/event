@@ -8,19 +8,13 @@
     min-width: 1140px;
 }
 
-img{
+/* img{
     width: 100%;
     object-fit: contain;
-}
-
-.hero-container{
-    max-width: 1800px;
-    margin: 0 auto;
-}
-
+} */
 
 /* header */
-.mobile-menu{
+.header-menu{
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
@@ -37,16 +31,234 @@ a{
     font-size: 13px;
     padding: 0 15px;
 }
+
+.special{
+    border: 1px solid rgba(209, 169, 84, 0.90);
+    background: none;
+    color: var(--accent, #D1A954);
+    padding: 5px;
+}
+
+.mega-special{
+    color: #D1A954;
+    font-weight:bolder;
+}
+
 header button{
     border: none;
     background: none;
 }
 
 
-.yellow-position{
-    position: absolute;
-    top: 100px;
-    background: rgba(209, 169, 84, 0.90);
-    opacity: 0.5;
+/* hero section */
 
+.bootstrap-box{
+    margin: 0 0 460px 0;
+}
+
+.hero-container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.img-spacing {
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.overlay {
+    background-color: #D1A954E5;
+    padding: 20px 15px;
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+}
+
+.box:hover .overlay{
+    bottom: 0;
+    transition: 0.6s;
+}
+.frame{
+    border: 1px solid #ffffff80;
+    padding: 21px 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.first-style{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    padding: 0 0 10px;
+}
+
+.second-style{
+    font-size: 14px;
+    padding: 0 151px;
+}
+
+.arrow{
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+/* Section about */
+.container-about{
+    max-width: 1000px;
+    margin:0 auto ;
+}
+
+.section-instogram{
+    background: #F9F7F7;
+    padding: 100px 0;
+}
+.instagram-text svg{
+    margin: 15px 0;
+}
+
+.about{
+    background: #F9F7F7;
+}
+
+.box-video{
+    text-align: center
+}
+
+.box-video{
+    margin-top: -370px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.div1{
+    padding: 70px 0;
+}
+
+.div1 p{
+padding: 30px 0;
+font-weight: 300;
+line-height: 135%;
+}
+.parent {
+    padding: 0 0 0 80px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 16px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 13 / 6; }
+    .div2 { grid-area: 1 / 6 / 7 / 9; }
+    .div3 { grid-area: 1 / 9 / 7 / 12; }
+    .div4 { grid-area: 7 / 6 / 13 / 9; }
+    .div5 { grid-area: 7 / 9 / 13 / 12; }
+
+
+    .parents {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        }
+        
+        .div11 { grid-area: 2 / 2 / 6 / 5; }
+        .div22 { grid-area: 1 / 4 / 5 / 9; }
+        .div33 { grid-area: 1 / 9 / 5 / 13; }
+        .div44 { grid-area: 5 / 2 / 13 / 4; }
+        .div55 { grid-area: 5 / 8 / 9 / 13; }
+        .div66 { grid-area: 9 / 8 / 13 / 13; }
+
+        /* section download */
+.section-download{
+    background: url(../assets/Rectangle\ 2\ \(4\).png) no-repeat center/cover ;
+    background-repeat: no-repeat;
+    padding:160px ;
+}
+
+ .photo-link button{
+    background-color: #FFFFFF;
+    border: none;
+    padding: 22px 46px;
+    font-size: 16px;
+    margin: 20px 43px;
+    text-transform: uppercase;
+}
+
+.style-text{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 30px 0;
+}   
+
+.photo-button{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.col-6{
+    width: 50%;
+    padding: 15px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 50px 0;
+}
+
+.yellow-button{
+    background: var(--accent, #D1A954);
+    border: none;
+    padding: 12px 35px;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* section contacts */
+.section-contacts{
+    padding: 120px 0;
+}
+
+.instagram-text{
+    text-align: center;
+}
+
+.small-size{
+    font-size: 9px;
+    letter-spacing: 0.27px;
+    text-transform: uppercase;
+}
+
+/* section instogram */
+.photo-line{
+    display: flex;
+}
+.photo-line img{
+width: 316px;
+}
+
+/* footer */
+.link-footer{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #000;
+    font-weight: bolder;
 }
